@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/cream">
+
+    <ImageView
+        android:id="@+id/ivpic1"
+        android:layout_width="122dp"
+        android:layout_height="119dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/dot" />
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Login"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="60dp"
+            android:ems="15"
+            android:hint="Enter a valid Email"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="15"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="60dp"
+                android:hint="Enter a Strong Password"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btnforgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                android:text="Forget Password"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Login"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="150dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Login">𝐿𝑜𝑔𝒾𝓃</string>
+    <string name="forgotPassword">Forget password? </string>
+    <string name="Enter_your_name">Please Enter your Email !</string>
+    <string name="Enter_your_Password">Please Enter your Password !</string>
+    <string name="Successfully_login">Login Successfully ! </string>
+    <string name="Radio_Button">_Please choose Your Gender_</string>
+    <string name="Male">Male</string>
+    <string name="FeMale">FeMale</string>
+    <string name="other">others</string>
+    <string name="last_password">
+        Enter your last password
+    </string>
+    <string name="forgetPassword">Forget Password</string>
+
+</resources>
