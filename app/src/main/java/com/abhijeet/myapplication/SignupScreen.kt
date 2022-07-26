@@ -37,10 +37,12 @@ class SignupScreen : AppCompatActivity() {
         rdother=findViewById(R.id.rdother)
         rggender=findViewById(R.id.rggender)
         etphonenumber.doOnTextChanged { text,_,_, _ ->
-            if((text?.length ?:0)<10)
-                Toast.makeText(this, resources.getString(R.string.Phonenumber_limit), Toast.LENGTH_LONG  ).show()
+            if((text?.length ?:0)<10){
+                etphonenumber.error=resources.getString(R.string.valid_number)
+        }else{
+            etphonenumber.error=null
+            }
         }
-
         etEmail1.doOnTextChanged { text, start, before, count ->
 
             if (!(Patterns.EMAIL_ADDRESS.matcher(etEmail1.text.toString()).matches())) {
@@ -55,8 +57,8 @@ class SignupScreen : AppCompatActivity() {
                 Toast.makeText(this, resources.getString(R.string.done), Toast.LENGTH_SHORT).show()
             }
         }
-        etpassword2.doOnTextChanged { text, start, before, count ->
-            if(!(text==etpassword1.text.toString())){
+        etpassword2.doOnTextChanged { text, _, _, count ->
+            if(text != etpassword1.text.toString()){
                 etpassword2.error=resources.getString(R.string.Password_dont_match)
 
             }
@@ -76,7 +78,42 @@ class SignupScreen : AppCompatActivity() {
         }
 
         btnsignup.setOnClickListener {
+            etFirstname.text.clear()
+            etLastname.text.clear()
+            etEmail1.text.clear()
+            etphonenumber.text.clear()
+            etpassword1.text.clear()
+
+            var firstName=etFirstname.text.toString()
+            var lastName=etLastname.text.toString()
+            var email1=etEmail1.text.toString()
+            var phoneNumber=etphonenumber.text.toString()
+            var passsword1=etpassword1.text.toString()
+
+            if (firstName.isNullOrEmpty()){
+                etFirstname.error=resources.getString(R.string.Enter_name)
+                etFirstname.requestFocus()
+
+            }
+            else if(lastName.isNullOrEmpty()){
+                etLastname.error=resources.getString(R.string.enterlastName)
+                etLastname.requestFocus()
+            }
+            else if (email1.isNullOrEmpty()){
+                etEmail1.error=resources.getString((R.string.Enter_your_email))
+                etEmail1.requestFocus()
+            }
+            else if (phoneNumber.isNullOrEmpty()){
+                etphonenumber.error=resources.getString((R.string.valid_phoneNumber))
+                etphonenumber.requestFocus()
+            }
+            else if(passsword1.isNullOrEmpty()){
+                etpassword1.error=resources.getString((R.string.Enter_your_Password))
+                etpassword1.requestFocus()
+            }
+            else{
             Toast.makeText(this, resources.getString(R.string.signup_succesfully), Toast.LENGTH_LONG).show()
         }
     }
+}
 }

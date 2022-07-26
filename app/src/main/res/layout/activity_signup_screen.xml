@@ -168,7 +168,6 @@
                                 android:id="@+id/etdescription"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Specify your Character/Gender"
                                 android:textStyle="italic"
                                 android:visibility="gone"
                                 android:hint="@string/description"/>

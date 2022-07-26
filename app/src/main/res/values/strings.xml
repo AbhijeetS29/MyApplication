@@ -31,5 +31,9 @@
     <string name="newpassword">create a new password</string>
     <string name="newpasswordhint">Enter a Strong Password</string>
     <string name="password_changed">Your password has been changed</string>
+    <string name="valid_number">Enter a valid number</string>
+    <string name="Enter_name">Enter your name</string>
+    <string name="enterlastName">Enter your last name</string>
+    <string name="valid_phoneNumber">Enter a valid phone Number</string>
 
 </resources>
