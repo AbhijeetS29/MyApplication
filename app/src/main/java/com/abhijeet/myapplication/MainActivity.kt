@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
         }
         btnforgot.setOnClickListener {
             var intent = Intent(this,MainActivity3::class.java)
-            intent.putExtra("email",etmail.text.toString())
+            intent.putExtra("password",etPassword.text.toString())
+            startActivity(intent)
         }
         btnlogin.setOnClickListener {
             etmail.text.clear()

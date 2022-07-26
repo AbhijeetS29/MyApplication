@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3"
     android:orientation="vertical"
-    android:background="">
+    android:background="@color/white">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,24 +20,25 @@
         android:id="@+id/etforgotprocess"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your Last Password"
+        android:hint="Enter your Last Password you remember "
         android:ems="14"
         android:layout_marginLeft="20dp" />
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/tvanotherway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Try Another way ? "
             android:textStyle="italic"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="40dp"/>
         <Button
+            android:id="@+id/btnnext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Next"
-            android:layout_marginLeft="60dp"/>
+            android:layout_marginLeft="80dp"/>
     </LinearLayout>
 
 </LinearLayout>
