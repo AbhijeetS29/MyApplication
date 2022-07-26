@@ -2,16 +2,31 @@
     <string name="app_name">My Application</string>
     <string name="Login">𝐿𝑜𝑔𝒾𝓃</string>
     <string name="forgotPassword">Forget password? </string>
-    <string name="Enter_your_name">Please Enter your Email !</string>
+    <string name="Enter_your_email">Please Enter your Email !</string>
     <string name="Enter_your_Password">Please Enter your Password !</string>
     <string name="Successfully_login">Login Successfully ! </string>
     <string name="Radio_Button">_Please choose Your Gender_</string>
     <string name="Male">Male</string>
     <string name="FeMale">FeMale</string>
     <string name="other">others</string>
-    <string name="last_password">
-        Enter your last password
-    </string>
+    <string name="last_password">Enter your last password</string>
     <string name="forgetPassword">Forget Password</string>
+    <string name="already_have_account">Already have an account?,</string>
+    <string name="Signup">𝐒𝐢𝐠𝐧𝐔𝐩</string>
+    <string name="Email">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="confirm_password">confirm your password</string>
+    <string name="Reenter_password">Re-Enter your password</string>
+    <string name="description">describe your Character</string>
+    <string name="enter_name">Name</string>
+    <string name="signup_succesfully">Signup Successfully !</string>
+    <string name="Phonenumber_limit">"your phone number is too long "</string>
+    <string name="password_limit">Password must be atleast of 6 characters !!</string>
+    <string name="done">password is okk !</string>
+    <string name="Password_dont_match">"Password does not match "</string>
+    <string name="Email_wrong">Enter A valid Email</string>
+       <string name="one_time_password">"Enter otp"</string>
+    <string name="Resend_otp">Resend otp?</string>
+    <string name="Submit">Submit</string>
 
 </resources>

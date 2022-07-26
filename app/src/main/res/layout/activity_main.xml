@@ -27,7 +27,7 @@
         android:textAlignment="center"
         android:textColor="@color/teal_700"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         android:textSize="30dp" />
 
     <LinearLayout
@@ -42,7 +42,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="60dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="20dp"
             android:ems="15"
             android:hint="Enter a valid Email"
             android:textColorHint="@color/black"
@@ -60,7 +60,7 @@
                 android:ems="15"
                 android:layout_marginLeft="70dp"
                 android:layout_marginRight="60dp"
-                android:layout_marginBottom="60dp"
+                android:layout_marginBottom="5dp"
                 android:hint="Enter a Strong Password"
                 android:textColorHint="@color/black"
                 android:inputType="textPassword"
@@ -71,21 +71,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="220dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/white"
                 android:text="Forget Password"
                 android:textColor="@color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Login"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="150dp" />
+                android:layout_marginLeft="10dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+
+                    android:text="@string/already_have_account" />
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="20dp"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
 
             </LinearLayout>
         </LinearLayout>

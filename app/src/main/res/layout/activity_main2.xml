@@ -4,53 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context=".mainactivity2"
     android:orientation="vertical"
-    android:background="@color/cream">
+    android:background="@color/white">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Radio_Button"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:text="@string/forgetPassword"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="30dp"/>
 
-    <RadioGroup
+
+    <EditText
+        android:id="@+id/etforgotprocess"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/rdmale"
+        android:hint="Enter the Last Password you remember"
+        android:ems="14"
+        android:layout_marginLeft="20dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvanotherway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Male"
-            android:textSize="18sp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="30dp"/>
-        <RadioButton
-            android:id="@+id/rdfemale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FeMale"
-            android:textSize="18sp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Others."
-            android:textSize="18sp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="3dp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Specify your Character/Gender"
+            android:text="Try Another way ? "
             android:textStyle="italic"
-            android:visibility="gone"/>
-    </RadioGroup>
-
+            android:layout_marginLeft="40dp"/>
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginLeft="80dp"/>
+    </LinearLayout>
 
 </LinearLayout>
