@@ -13,7 +13,8 @@
         android:textStyle="bold"
         android:text="@string/forgetPassword"
         android:layout_marginTop="130dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/Green"/>
 
 
     <EditText
@@ -32,7 +33,8 @@
             android:layout_height="wrap_content"
             android:text="Try Another way ? "
             android:textStyle="italic"
-            android:layout_marginLeft="40dp"/>
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/Green"/>
         <Button
             android:id="@+id/btnnext"
             android:layout_width="wrap_content"

@@ -25,8 +25,11 @@
     <string name="done">password is okk !</string>
     <string name="Password_dont_match">"Password does not match "</string>
     <string name="Email_wrong">Enter A valid Email</string>
-       <string name="one_time_password">"Enter otp"</string>
+    <string name="one_time_password">"Enter otp"</string>
     <string name="Resend_otp">Resend otp?</string>
     <string name="Submit">Submit</string>
+    <string name="newpassword">create a new password</string>
+    <string name="newpasswordhint">Enter a Strong Password</string>
+    <string name="password_changed">Your password has been changed</string>
 
 </resources>
