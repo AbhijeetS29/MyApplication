@@ -98,7 +98,7 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@color/black"
 
-                    android:text="@string/already_have_account" />
+                    android:text="@string/dont_have_account" />
     <TextView
         android:id="@+id/tvsignup"
         android:layout_width="wrap_content"

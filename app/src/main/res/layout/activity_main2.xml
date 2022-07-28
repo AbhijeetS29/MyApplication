@@ -23,7 +23,6 @@
         android:layout_height="wrap_content"
         android:hint="Enter the Last Password you remember"
         android:ems="14"
-        android:textColorHint="@color/black"
         android:layout_marginLeft="20dp" />
     <LinearLayout
         android:layout_width="wrap_content"

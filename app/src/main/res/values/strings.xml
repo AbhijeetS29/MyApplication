@@ -35,5 +35,6 @@
     <string name="Enter_name">Enter your name</string>
     <string name="enterlastName">Enter your last name</string>
     <string name="valid_phoneNumber">Enter a valid phone Number</string>
+    <string name="dont_have_account">Don\'t have any account</string>
 
 </resources>

@@ -6,34 +6,32 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
+import com.abhijeet.myapplication.databinding.ActivityNewpasswordBinding
 
 class newpassword : AppCompatActivity() {
-    lateinit var etnewpass:EditText
-    lateinit var etconfirmnew:EditText
-    lateinit var btndone:Button
+    lateinit var binding: ActivityNewpasswordBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_newpassword)
-        etnewpass=findViewById(R.id.etnewpass)
-        etconfirmnew=findViewById(R.id.etconfirmnew)
-        btndone=findViewById(R.id.btndone)
+        binding= ActivityNewpasswordBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
-        etnewpass.doOnTextChanged { text, start, before, count ->
+        binding.etnewpass.doOnTextChanged { text, start, before, count ->
             if ((text?.length ?:0)<6){
-                etnewpass.error=resources.getString(R.string.password_limit)
+                binding.etnewpass.error=resources.getString(R.string.password_limit)
             }else{
-                etnewpass.error=null
+                binding.etnewpass.error=null
             }
         }
-        etconfirmnew.doOnTextChanged { text, start, before, count ->
-            if(!(text==etnewpass.text.toString())){
-                etconfirmnew.error=resources.getString(R.string.Password_dont_match)
+        binding.etconfirmnew.doOnTextChanged { text, start, before, count ->
+            if(!(text==binding.etnewpass.text.toString())){
+               binding.etconfirmnew.error=resources.getString(R.string.Password_dont_match)
             }else{
-                etconfirmnew.error=null
+                binding.etconfirmnew.error=null
             }
         }
-        btndone.setOnClickListener {
+            binding.btndone.setOnClickListener {
             Toast.makeText(this, resources.getString(R.string.password_changed), Toast.LENGTH_SHORT).show()
         }
     }
